@@ -71,10 +71,13 @@ const Container = styled.div`
   top: 0;
   z-index: ${(props) => props.theme.index5};
   transition: all 0.7s ease-in-out;
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 8px 32px 0 rgb(255, 255, 255);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: ${({ scrollNav }) =>
+    scrollNav ? "rgba(255, 255, 255, 0.4)" : "transparent"};
+  box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "0 8px 32px 0 rgb(255, 255, 255)" : "unset"};
+  backdrop-filter: ${({ scrollNav }) => (scrollNav ? "blur(4px)" : "unset")};
+  -webkit-backdrop-filter: ${({ scrollNav }) =>
+    scrollNav ? "blur(4px)" : "unset"};
 `;
 const Wrapper = styled.div`
   width: 100%;
