@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Contacts from "../../components/Contacts";
 
-const contact = () => {
+const index = () => {
   return (
     <Container>
       <Wrapper>
@@ -41,7 +41,7 @@ const contact = () => {
     </Container>
   );
 };
-export default contact;
+export default index;
 
 const Container = styled.div`
   padding: 0 5%;
