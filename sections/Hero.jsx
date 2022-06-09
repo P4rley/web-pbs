@@ -19,7 +19,13 @@ const Hero = () => {
           <Box>
             <BoxImgWrapper>
               <BoxImg>
-                <Image src={img} alt="tomato" layout="fill" objectFit="cover" />
+                <Image
+                  src={img}
+                  alt="tomato"
+                  layout="fill"
+                  objectFit="cover"
+                  priority
+                />
               </BoxImg>
             </BoxImgWrapper>
             <Title>Tomato</Title>
@@ -130,16 +136,12 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div``;
 const Heading = styled.h1`
-  text-align: center;
-  font-size: ${(props) => props.theme.fontxl};
+  font-weight: 400;
   height: 60vh;
+  font-size: ${(props) => props.theme.fontxl};
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media screen and (min-width: 768px) {
-    font-size: ${(props) => props.theme.fontxxl};
-  }
 `;
 const HeroBoxWrapper = styled.div`
   @media screen and (min-width: 425px) {

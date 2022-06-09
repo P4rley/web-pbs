@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Head>
         <title>PT PBS</title>
         <meta
@@ -17,14 +17,13 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalStyles />
-      <ThemeProvider theme={theme}>
-        <AnimatePresence>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </AnimatePresence>
-      </ThemeProvider>
-    </>
+
+      <AnimatePresence>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </AnimatePresence>
+    </ThemeProvider>
   );
 }
 

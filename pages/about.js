@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import Contact from "../components/Contact";
+import Contacts from "../components/Contacts";
 
 // Image
 import img from "../public/assets/tomato.jpg";
@@ -38,7 +38,7 @@ const about = () => {
         </AboutWrapper>
       </Wrapper>
       <AboutSection />
-      <Contact />
+      <Contacts />
     </Container>
   );
 };
@@ -53,10 +53,12 @@ const Container = styled.section`
 `;
 const Wrapper = styled.div``;
 const Header = styled.h1`
+  font-weight: 400;
+  height: 60vh;
+  font-size: ${(props) => props.theme.fontxl};
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
 `;
 const AboutWrapper = styled.div`
   @media screen and (min-width: 768px) {

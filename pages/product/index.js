@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Contact from "../../components/Contact";
+import Contacts from "../../components/Contacts";
 
 // Image
 import img from "../../public/assets/tomato.jpg";
@@ -106,7 +106,7 @@ const index = () => {
           </Box>
         </BoxWrapper>
       </Wrapper>
-      <Contact />
+      <Contacts />
     </Container>
   );
 };

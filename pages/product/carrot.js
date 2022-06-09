@@ -3,16 +3,16 @@ import styled from "styled-components";
 import Contacts from "../../components/Contacts";
 
 // Image
-import img from "../../public/assets/tomato.jpg";
+import img from "../../public/assets/carrot.jpg";
 
 const tomato = () => {
   return (
     <Container>
       <Wrapper>
-        <Heading>Tomato</Heading>
+        <Heading>Carrot</Heading>
         <ContentWrapper>
           <Content>
-            <Title>Exporting high quality tomato</Title>
+            <Title>Exporting high quality carrot</Title>
             <Data>
               <Left>
                 <Img>

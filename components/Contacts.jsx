@@ -5,7 +5,7 @@ import styled from "styled-components";
 // Image
 import img from "../public/assets/person.jpg";
 
-const Contact = () => {
+const Contacts = () => {
   return (
     <Container>
       <Box>
@@ -24,7 +24,7 @@ const Contact = () => {
     </Container>
   );
 };
-export default Contact;
+export default Contacts;
 
 const Container = styled.div`
   width: 100%;

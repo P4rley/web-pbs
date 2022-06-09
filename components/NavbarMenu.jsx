@@ -40,34 +40,34 @@ const NavbarMenu = ({ click, handleClick }) => {
                     Tomato
                   </ProductData>
                 </Link>
-                <Link href="/product/tomato">
+                <Link href="/product/carrot">
                   <ProductData
                     onClick={() => {
                       handleClick();
                       handleClick2();
                     }}
                   >
-                    Tomato
+                    Carrot
                   </ProductData>
                 </Link>
-                <Link href="/product/tomato">
+                <Link href="/product/garlic">
                   <ProductData
                     onClick={() => {
                       handleClick();
                       handleClick2();
                     }}
                   >
-                    Tomato
+                    Garlic
                   </ProductData>
                 </Link>
-                <Link href="/product/tomato">
+                <Link href="/product/potato">
                   <ProductData
                     onClick={() => {
                       handleClick();
                       handleClick2();
                     }}
                   >
-                    Tomato
+                    Potato
                   </ProductData>
                 </Link>
               </ProductDataWrapper>
